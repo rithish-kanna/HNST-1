@@ -1,5 +1,5 @@
-#HNST-1
-Hybrid Neural Style Transfer - 1
+# HNST-1
+# Hybrid Neural Style Transfer - 1
 This code has Static images used, you can change the images if you wish.NewImagr will provide the merged image.This provides the artist with better comparison on the styles.
 
 
@@ -27,5 +27,7 @@ Process done on HNST-1.py file is shown below
 
 
 The final merging performed is shown on NewImage
+
+![image](https://github.com/rithish-kanna/HNST-1/assets/115450614/3797d20a-2cf1-45a5-bf17-59fcc30293b9)
 
 AT LAST WE CAN SEE A SEPARATE STYLE APPLIED FOR Left and Right Half...
