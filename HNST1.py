@@ -13,7 +13,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 tf.compat.v1.disable_eager_execution()
 %matplotlib inline
 ls=[]
-img = cv2.imread('new1.png')
+img = cv2.imread('eifel.jpg')
 print(img.shape)
 height = img.shape[0]
 width = img.shape[1]
@@ -25,15 +25,15 @@ cv2.imwrite("face1.jpg", s1)
 cv2.imwrite("face2.jpg", s2)
 s1=im.fromarray(s1)
 s2=im.fromarray(s2)
-s3='hnst1.png'
-s4='hnst2.png'
+s3='1.jpeg'
+s4='6.jpeg'
 for i in range(2):
   if i==0:
     target_image_path= 'face1.jpg'
-    style_reference_image_path='hnst1.png'
+    style_reference_image_path='1.jpeg'
   else:
     target_image_path= 'face2.jpg'
-    style_reference_image_path='hnst2.png'
+    style_reference_image_path='6.jpeg'
   # Dimensions of the generated picture.
   result_prefix = style_reference_image_path.split(str(target_image_path))[0][:-5] + '_onto_' + target_image_path.split(str(style_reference_image_path))[0][:-5]
   width, height = load_img(target_image_path).size
